@@ -43,6 +43,7 @@ To get started with InceptionTimeV2.9, you can run the demo Jupyter notebooks to
 
 ```
 jupyter notebook CODE/demo/train.ipynb
+jupyter notebook CODE/demo/attack.ipynb
 ```
 
 ## Project Structure
@@ -76,7 +77,7 @@ Contributions to the project are welcome. Please see `CONTRIBUTING.md` for how t
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
 
 ## Contact
 

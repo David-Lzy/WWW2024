@@ -20,7 +20,7 @@ To install and run InceptionTimeV2.9, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone [repository link]
+   git clone [[repository link]](https://github.com/David-Lzy/WWW2024#installation)
    cd InceptionTimeV2.9
    ```
 

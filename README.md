@@ -91,7 +91,7 @@ This flexible structure allows both novice and advanced users to tailor the Ince
 
 ## Contribution Guidelines
 
-Contributions to the project are welcome. Please see `CONTRIBUTING.md` for how to contribute.
+Contributions to the project are welcome. Please see `CONTRIBUTING.md` for how to contribute (It is not open yet, you need to wait until the article is received).
 
 ## License
 

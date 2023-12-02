@@ -9,7 +9,7 @@ InceptionTimeV2.9 is a deep learning-based time series classification and advers
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
-- [Customizing Training and Attacks](#customizing-training-and-attacks)
+- [Customizing Training and Attacks](#Customizing-Training-and-Attack-Strategies)
 - [Contribution Guidelines](#contribution-guidelines)
 - [License](#license)
 - [Contact](#contact)

@@ -1,0 +1,63 @@
+// Never use the config file, this file only explain the details for the class
+{
+    "dataset": "YourDatasetName", // Name of the dataset being used
+    "device": null, // Computing device to use, e.g., "cuda" or "cpu". If null, the code will automatically detect and choose an available device
+    "batch_size": 64, // Number of samples per batch during training
+    "epoch": 750, // Total number of training epochs
+    "loss": "CrossEntropyLoss", // Name of the loss function to use, in this case, Cross Entropy Loss
+    "override": false, // Whether to override existing models and data
+    "defence": {
+        "angle": false, // Whether to use angle-based defense
+        "Augmentation": { // Data augmentation methods
+            "ahead_model": { // Augmentations applied before the model
+                "Jitter": { // Apply Jitter augmentation
+                    "p": 0.5, // Probability of applying Jitter
+                    "amplitude": 0.1 // Amplitude of Jitter
+                },
+                "binomial_mask": { // Apply Binomial Mask augmentation
+                    "keep_prob ": 0.75 // Probability of keeping the original value, i.e., not masking
+                },
+                "continuous_mask": { // Apply Continuous Mask augmentation
+                    "max_chunk_ratio": 0.05, // Maximum ratio for a continuous mask chunk
+                    "overall_mask_ratio": 0.25 // Overall ratio of the mask
+                },
+                "gaussian_noise": { // Apply Gaussian Noise augmentation
+                    "mean": 0, // Mean of the Gaussian noise
+                    "std": 0.1 // Standard deviation of the Gaussian noise
+                },
+                "gaussian_smooth": { // Apply Gaussian Smoothing augmentation
+                    "kernel_size": 10, // Size of the Gaussian kernel
+                    "sigma": 5 // Standard deviation of the Gaussian kernel
+                },
+                "NULL": {} // No augmentation
+            },
+            "in_model": { // Augmentations applied within the model, parameters are similar to "ahead_model"
+                "Jitter": {
+                    "p": 0.5,
+                    "amplitude": 0.1
+                },
+                "binomial_mask": {
+                    "keep_prob ": 0.75
+                },
+                "continuous_mask": {
+                    "max_chunk_ratio": 0.05,
+                    "overall_mask_ratio": 0.25
+                },
+                "gaussian_noise": {
+                    "mean": 0,
+                    "std": 0.1
+                },
+                "gaussian_smooth": {
+                    "kernel_size": 10,
+                    "sigma": 5
+                },
+                "nothing": {}
+            }
+        }
+    },
+    "path_pramater": [
+        "defence"
+    ] // Path to the pramater
+    // We have no choice here, consider the choices of the defence method are too many, so we need the user to put a the name of these parameter they want to analysis here.
+    // Another advatage when the user want a loop to analysis the different choice of the parameter, they can easily use the key of the dictionary here to generate the path.
+}

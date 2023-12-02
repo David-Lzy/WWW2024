@@ -1,0 +1,19 @@
+{
+    "dataset": "Beef",
+    "device": null,
+    "batch_size": 64,
+    "epoch": 750,
+    "loss": "CrossEntropyLoss",
+    "override": false,
+    "defence": {
+        "angle": false,
+        "get_w_mtx": false,
+        "Augmentation": {}
+    },
+    "path_pramater": [
+        "defence"
+    ],
+    "adeversarial_training": false,
+    "adeversarial_path": "",
+    "adeversarial_resume": false
+}

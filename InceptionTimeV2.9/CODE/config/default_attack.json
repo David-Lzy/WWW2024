@@ -1,0 +1,25 @@
+{
+    "dataset": "YourDatasetName",
+    "device": null,
+    "Model": "Classifier_INCEPTION",
+    "batch_size": 64,
+    "epoch": 1000,
+    "eps_init": 0.01,
+    "eps": 0.1,
+    "gamma": 0.01,
+    "c": 0.00001,
+    "swap": false,
+    "swap_index": 1,
+    "kl_loss": false,
+    "CW": false,
+    "sign_only": false,
+    "alpha": 0.01,
+    "angle": false,
+    "path_parameter": [
+        "swap",
+        "kl_loss",
+        "CW",
+        "sign_only"
+    ],
+    "adeversarial_training": false
+}

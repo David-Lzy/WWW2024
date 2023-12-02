@@ -1,0 +1,32 @@
+// Never use the config file, this file only explain the details for the class paramater
+
+{
+    "dataset": "YourDatasetName",
+    "device": null, // The device to run the attack on, e.g. 'cuda' or 'cpu'.
+    "Model": "Classifier_INCEPTION", // The model to be attacked, default is Classifier_INCEPTION.
+    "batch_size": 64, // Number of samples per batch.
+    "epoch": 1000, // Total number of epochs for the attack.
+    "eps_init": 0.001, // Initial value for the epsilon perturbation.
+    "eps": 0.1, // Maximum allowed perturbation.
+    "gamma": 0.01, // A parameter for adjusting the target in SWAP method.
+    "c": 0.0001, // Regularization parameter for CW loss.
+    "swap": true, // Whether to use the SWAP method.
+    "swap_index": 1, // Index for the SWAP method.
+    "kl_loss": false, // Whether to use the Kullback-Leibler loss.
+    "CW": false, // Whether to use the Carlini-Wagner loss.
+    "sign_only": false, // Whether to use the sign of the gradient for BIM.
+    "alpha": 0.01, // Step size for BIM.
+    "angle": false, // Whether to use angle-based attack.
+    "path_pramater": [
+        "swap",
+        "kl_loss",
+        "CW",
+        "defence"
+    ] // Path to the pramater
+    // We have no choice here, consider the choices of the defence method are too many, so we need the user to put a the name of these parameter they want to analysis here.
+    // Another advatage when the user want a loop to analysis the different choice of the parameter, they can easily use the key of the dictionary here to generate the path.
+    // Note:
+    // - The 'Mix' class provides a flexible framework for performing adversarial attacks using a combination of different methods.
+    // - Ensure that the required dependencies are accessible or available in the directory structure.
+    // - The class provides various methods to facilitate and customize the adversarial attack process.
+}

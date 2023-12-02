@@ -1,0 +1,2 @@
+loss,accuracy,precision,recall,f1,duration
+0.551483154296875,1.0,1.0,1.0,1.0,23.62882375717163

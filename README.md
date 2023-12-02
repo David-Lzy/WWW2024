@@ -20,7 +20,7 @@ To install and run InceptionTimeV2.9, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone [[repository link]](https://github.com/David-Lzy/WWW2024#installation)
+   git clone https://github.com/David-Lzy/WWW2024#installation
    cd InceptionTimeV2.9
    ```
 
@@ -99,4 +99,4 @@ This project is licensed under the [GNU General Public License v3.0](LICENSE).
 
 ## Contact
 
-For any questions or suggestions, please contact the [project maintainer](mailto:your-email@example.com).
+For any questions or suggestions, please contact the [project maintainer](mailto:cdong1997@gmail.com).

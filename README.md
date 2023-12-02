@@ -1,9 +1,6 @@
 # WWW2024
 This is the repository about the robustness investigation in time series classification model by using grand based attack.
 
-
-# InceptionTimeV2.9
-
 InceptionTimeV2.9 is a deep learning-based time series classification and adversarial training framework, focusing on training and attacking Inception networks. It offers a suite of tools for building, training, and evaluating time series models, and performing adversarial attacks to test model robustness.
 
 ## Table of Contents

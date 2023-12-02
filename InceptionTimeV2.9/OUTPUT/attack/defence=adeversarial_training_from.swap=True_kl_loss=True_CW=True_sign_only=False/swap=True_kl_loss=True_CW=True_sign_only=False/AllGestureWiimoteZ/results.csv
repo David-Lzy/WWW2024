@@ -1,0 +1,2 @@
+ASR,mean_success_distance,mean_failure_distance,overall_mean_distance,Count_Success,Count_Fail,duration
+0.99,0.09988968,0.75142246,0.106405005,693,7,21.598570585250854
